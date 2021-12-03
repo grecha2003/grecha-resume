@@ -65,6 +65,7 @@ h3 {
     display: flex;
     background: rgb(209, 204, 204);
     margin: 10px 0;
+		justify-content: center;
 }
 
 .nav li a{
@@ -75,6 +76,10 @@ h3 {
     font-weight: bold;
     transition: background .3s ease;
     border-right: 2px solid rgb(190, 190, 190);
+}
+
+.nav li:nth-child(1) {
+	border-left: 2px solid rgb(190, 190, 190);
 }
 
 .nav li a:hover{
