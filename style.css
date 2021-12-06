@@ -100,12 +100,16 @@ h3 {
 }
 
 .sidebar{
+		display: grid;
     width: 30%;
-    padding: 20px;
+		padding: 14px;
+    padding-left: 73px;
+		justify-items: end;
+    justify-content: center;
 }
 
 .skills li{
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .social li{
@@ -119,11 +123,17 @@ h3 {
 }
 
 .sidebar_social{
-    width: 100%;
-    padding: 20px;
-    text-align: center;
+    width: 50%;
 }
 
 .sidebar_social a{
     text-decoration: none;
+}
+
+.craft {
+		color: red;
+		background-color: black;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 }
