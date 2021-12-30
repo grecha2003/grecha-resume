@@ -17,6 +17,16 @@
   },
   "homepage": "https://github.com/grecha2003/grecha-resume#readme",
   "dependencies": {
-    "moment": "^2.29.1"
+    "gulp": "^4.0.2",
+    "moment": "^2.29.1",
+    "pkg-name": "^2.0.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0"
   }
 }
