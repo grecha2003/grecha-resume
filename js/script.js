@@ -33,6 +33,3 @@ $("html").mousemove(function (e) {
     isEyeProcessed = false;
   }
 });
-
-
-
