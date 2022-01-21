@@ -5,8 +5,10 @@
 *.pdf
 *.psd
 *.sublime*
-build
-dist
+.cache/
+build/
+dist/
 node_modules
 npm-debug.*
 Thumbs.db
+.vercel

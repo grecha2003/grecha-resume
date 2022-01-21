@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=build",
+    "postcss": "postcss css/style.css --use autoprefixer -d dist/"
   },
   "repository": {
     "type": "git",
@@ -19,14 +21,55 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
     "pkg-name": "^2.0.0"
   },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "IE 10"
-  ],
+  "browserslist": {
+    "chrome58": [
+      "Chrome 58"
+    ],
+    "chrome62": [
+      "Chrome 62"
+    ],
+    "edge15": [
+      "Edge 15"
+    ],
+    "ie6": [
+      "IE 6"
+    ],
+    "ie7": [
+      "IE 7"
+    ],
+    "ie8": [
+      "IE 8"
+    ],
+    "ie9": [
+      "IE 9"
+    ],
+    "defaults": [
+      "last 1 version",
+      "> 1%",
+      "IE 10"
+    ],
+    "not ie": [
+      "defaults",
+      "not ie <=11"
+    ],
+    "opera9": [
+      "Opera 9"
+    ],
+    "firefox2": [
+      "Firefox 2"
+    ],
+    "safari5": [
+      "Safari < 5"
+    ]
+  },
   "devDependencies": {
-    "gulp-autoprefixer": "^8.0.0"
+    "autoprefixer": "^10.4.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-modules": "^4.3.0"
   }
 }
