@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
 body {
   font-family: 'Balsamiq Sans', cursive;
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  filter: drop-shadow(0 0 15px white);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: drop-shadow(0 0 7px white);
   overflow: hidden;
   position: relative;
   top: 50px;
@@ -145,12 +150,13 @@ h3 {
 }
 
 .contacts {
-    display: flex;
-    position: relative;
-    margin-bottom: -95px;
-    right: 735px;
-    align-items: flex-end;
+  display: flex;
+  position: relative;
+  margin-bottom: -95px;
+  right: 735px;
+  align-items: flex-end;
 }
+
 .contacts__box span {
   display: block;
   margin-top: 10px;
@@ -164,7 +170,7 @@ h3 {
 .contacts__box-mail:hover {
   text-decoration: underline;
 }
- 
+
 .contacts__box h1 {
   font-size: 20px;
   font-weight: bold;
@@ -175,8 +181,20 @@ h3 {
 .contacts__box-list {
   display: flex;
 }
-.contacts__box-inner + .contacts__box-inner {
+
+.contacts__box-inner+.contacts__box-inner {
   margin-left: 10px;
+}
+
+.contacts__box-inner {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 .contacts__box-inner:nth-child(2) {
@@ -186,10 +204,32 @@ h3 {
 }
 
 .contacts__box-inner:hover {
-  -webkit-transform: rotateZ(20deg);
-  -ms-transform: rotateZ(20deg);
-  transform: rotateZ(20deg);
-  transition: all 0.3s ease;
+  -webkit-animation-name: Tada;
+  -moz-animation-name: Tada;
+  -o-animation-name: Tada;
+  animation-name: Tada;
+}
+
+@keyframes Tada {
+  0% {
+    transform: scale(1)
+  }
+
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg)
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg)
+  }
+
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg)
+  }
+
+  100% {
+    transform: scale(1) rotate(0)
+  }
 }
 
 .contacts__box-list p {
@@ -229,15 +269,18 @@ table {
   margin-left: -130px;
   top: 404px;
 }
+
 #cat {
   position: relative;
 }
+
 .cat-eye {
   position: absolute;
   display: none;
   width: 60px;
   height: 61px;
 }
+
 .cat-eyeball {
   position: absolute;
   left: 22.5px;
@@ -246,11 +289,13 @@ table {
   height: 16px;
   background: url(../images/eye.png);
 }
+
 #cat-eye-left {
   top: 486px;
   left: 54%;
   margin-left: -31px;
 }
+
 #cat-eye-right {
   top: 489px;
   left: 52%;
