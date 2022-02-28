@@ -3,7 +3,7 @@
   position: relative;
   content: '';
   background: url(./img/cat.png) center top no-repeat;
-  height: 100%;
+  height: 40%;
   margin: 0 -160px 0 -50px;
   top: 404px;
 }

@@ -2,14 +2,13 @@
 
 body {
   font-family: 'Balsamiq Sans', cursive;
-  height: 100vh;
+  height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   filter: drop-shadow(0 0 7px white);
-  overflow: hidden;
   position: relative;
   top: 50px;
 }
@@ -21,8 +20,8 @@ h3 {
 }
 
 .container {
-  width: 1220px;
   font-family: 'Balsamiq Sans', cursive;
+  width: 1220px;
   min-height: 800px;
   border: 10px solid #eeeeee;
   margin: 0 auto;
@@ -157,8 +156,8 @@ h3 {
 .contacts {
   display: flex;
   position: relative;
-  margin-bottom: -95px;
-  right: 780px;
+  margin-bottom: -65px;
+  right: 740px;
   align-items: flex-end;
 }
 
